@@ -58,11 +58,12 @@ twitter-sentiment-analysis/
 git clone https://github.com/your-username/twitter-sentiment-analysis.git
 cd twitter-sentiment-analysis
 
+```
+
 ### 2️⃣ Install dependencies
 pip install -r requirements.txt
 
-3️⃣ Download dataset from Kaggle
-# Install Kaggle API
+### 3️⃣ Download dataset from Kaggle
 pip install kaggle
 
 # Create .kaggle directory and add kaggle.json API key
@@ -73,7 +74,7 @@ copy kaggle.json ~/.kaggle/
 kaggle datasets download -d kazanova/sentiment140
 unzip sentiment140.zip -d data/
 
-4️⃣ Run the notebook
+### 4️⃣ Run the notebook
 
 Open notebooks/twitter_sentiment_analysis.ipynb
 
