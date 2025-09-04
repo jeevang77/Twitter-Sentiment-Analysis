@@ -61,25 +61,35 @@ cd twitter-sentiment-analysis
 ```
 
 ### 2️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 3️⃣ Download dataset from Kaggle
+```bash
 pip install kaggle
+```
 
 # Create .kaggle directory and add kaggle.json API key
+```bash
 mkdir ~/.kaggle
 copy kaggle.json ~/.kaggle/
 
-# Download dataset
+# Download Dataset
 kaggle datasets download -d kazanova/sentiment140
 unzip sentiment140.zip -d data/
+```
 
 ### 4️⃣ Run the notebook
+```bash
 
 Open notebooks/twitter_sentiment_analysis.ipynb
 
 Run all cells to preprocess data, train the model, and evaluate accuracy.
+```
 
-5️⃣ Predict sentiment of a new tweet
+### 5️⃣ Predict sentiment of a new tweet
+```bash
 prediction = loaded_model.predict(["I love AI!"])
 # Output: 0 -> Negative, 1 -> Positive
+```
